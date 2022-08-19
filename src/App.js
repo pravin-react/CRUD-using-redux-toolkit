@@ -25,9 +25,6 @@ function App() {
         </a>
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
-              <a className="nav-link" href="/products">CRUD</a>
-          </li>
-          <li className="nav-item">
           <a className="nav-link" href="/blogs">Blogs</a>
           </li>
           <li className="nav-item">
