@@ -8,9 +8,9 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "./App.scss";
-import UpdateBlog from "./Redux/Blog/UpdateBlog"
-import AddBlog from "./Redux/Blog/CreateBlog";
-import BlogsList from "./Redux/Blog/BlogList";
+import UpdateBlog from "./Blog/UpdateBlog"
+import AddBlog from "./Blog/CreateBlog";
+import BlogsList from "./Blog/BlogList";
 import ProductList from "./Crud/ProductList";
 import AddProduct from "./Crud/AddProduct";
 import EditProduct from "./Crud/EditProduct";
