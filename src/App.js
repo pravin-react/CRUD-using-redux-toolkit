@@ -7,9 +7,14 @@ import {
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import UpdateBlog from "./Blog/UpdateBlog"
-import AddBlog from "./Blog/CreateBlog";
-import BlogsList from "./Blog/BlogList";
+import "./App.scss";
+import UpdateBlog from "./Redux/Blog/UpdateBlog"
+import AddBlog from "./Redux/Blog/CreateBlog";
+import BlogsList from "./Redux/Blog/BlogList";
+import Todo from "./Mobx/Todo";
+import ProductList from "./Crud/ProductList";
+import AddProduct from "./Crud/AddProduct";
+import EditProduct from "./Crud/EditProduct";
 
 function App() {
   return (
@@ -17,14 +22,20 @@ function App() {
     <BrowserRouter>
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <a href="/" className="navbar-brand">
-          React Redux Toolkit
+          React Training
         </a>
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
-          <a className="nav-link" href="/blogs">Blogs</a>
+              <a className="nav-link" href="/products">CRUD</a>
+          </li>
+          <li className="nav-item">
+          <a className="nav-link" href="/blogs">Redux Used Blogs</a>
           </li>
           <li className="nav-item">
           <a className="nav-link" href="/add">Add Blog</a>
+          </li>
+          <li className="nav-item">
+              <a className="nav-link" href="/todo">Mobx Todo</a>
           </li>
         </div>
       </nav>
@@ -34,6 +45,11 @@ function App() {
           <Route path="/blogs" element={<BlogsList />} />
           <Route path="/update" element={<UpdateBlog />} />
           <Route path="/update/:id" element={<UpdateBlog />} />
+          <Route path="/todo" element={<Todo />} />
+          <Route path="/products" element={<ProductList />} />
+          <Route path="/add-product" element={<AddProduct />} />
+          <Route path="/edit-product" element={<EditProduct />} />
+          <Route path="/edit-product/:id" element={<EditProduct />} />
         </Routes>
       </BrowserRouter>
     </div>
