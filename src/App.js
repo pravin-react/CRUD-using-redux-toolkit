@@ -11,7 +11,6 @@ import "./App.scss";
 import UpdateBlog from "./Redux/Blog/UpdateBlog"
 import AddBlog from "./Redux/Blog/CreateBlog";
 import BlogsList from "./Redux/Blog/BlogList";
-import Todo from "./Mobx/Todo";
 import ProductList from "./Crud/ProductList";
 import AddProduct from "./Crud/AddProduct";
 import EditProduct from "./Crud/EditProduct";
@@ -45,7 +44,6 @@ function App() {
           <Route path="/blogs" element={<BlogsList />} />
           <Route path="/update" element={<UpdateBlog />} />
           <Route path="/update/:id" element={<UpdateBlog />} />
-          <Route path="/todo" element={<Todo />} />
           <Route path="/products" element={<ProductList />} />
           <Route path="/add-product" element={<AddProduct />} />
           <Route path="/edit-product" element={<EditProduct />} />
