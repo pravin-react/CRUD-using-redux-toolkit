@@ -28,13 +28,10 @@ function App() {
               <a className="nav-link" href="/products">CRUD</a>
           </li>
           <li className="nav-item">
-          <a className="nav-link" href="/blogs">Redux Used Blogs</a>
+          <a className="nav-link" href="/blogs">Blogs</a>
           </li>
           <li className="nav-item">
-          <a className="nav-link" href="/add">Add Blog</a>
-          </li>
-          <li className="nav-item">
-              <a className="nav-link" href="/todo">Mobx Todo</a>
+             <a className="nav-link" href="/add">Add Blog</a>
           </li>
         </div>
       </nav>
